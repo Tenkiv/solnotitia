@@ -22,17 +22,18 @@ repositories {
 
 mainClassName = 'com.tenkiv.support.solnotitia.MainKt'
 
-def jme3 = [v:'3.0.10', g:'com.jme3']
+def jme3 = [v:'3.1.0-stable', g:'org.jmonkeyengine']
 
 dependencies {
     compile "${jme3.g}:jme3-core:${jme3.v}"
     compile "${jme3.g}:jme3-desktop:${jme3.v}"
     compile "${jme3.g}:jme3-lwjgl:${jme3.v}"
+    compile "${jme3.g}:jme3-bullet:${jme3.v}"
+    compile "${jme3.g}:jme3-bullet-native:${jme3.v}"
     compile "${jme3.g}:jme3-blender:${jme3.v}"
+    compile "${jme3.g}:jme3-jogg:${jme3.v}"
     compile "${jme3.g}:jme3-niftygui:${jme3.v}"
     compile "${jme3.g}:jme3-android:${jme3.v}"
-    compile "${jme3.g}:jme3-ios:${jme3.v}"
-    compile "${jme3.g}:jme3-ios:${jme3.v}"
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
 
